@@ -19,7 +19,7 @@
 
   <script>
     try {
-      document.documentElement.dataset.theme = localStorage.getItem('portfolio-theme') || 'dark';
+      document.documentElement.dataset.theme = localStorage.getItem('portofolio-theme') || 'dark';
     } catch (error) {
       document.documentElement.dataset.theme = 'dark';
     }
@@ -506,10 +506,9 @@
           <div class="education-content">
             <h3>Sarjana Teknik (S.T.) — Teknik Pertambangan</h3>
             <p class="institution">Universitas Muslim Indonesia (UMI)</p>
-            <ul class="meta-list" aria-label="Detail pendidikan">
-              <li>2021–2025</li>
-              <li>IPK 3,73/4,00</li>
-              <li>Makassar, Sulawesi Selatan</li>
+           <div class="meta-list"><span>📅 2021 - 2025</span><span>🎓 IPK: 3,73/4,00</span><span>📍 Makassar, Sulawesi Selatan</span></div>
+	   
+	   <p>Judul Skipsi: Kajian Strategi Pemilihan Rute Angkut Ore Berdasarkan Kombinasi Faktor Produktivitas Dan Kualitas Bijih Di PT Gag Nikel</p>
             </ul>
           </div>
         </article>
@@ -701,7 +700,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container"><p>&copy; <span id="current-year">2026</span> La Tinro Inra Jaya Kunta, S.T. · Mining Engineer Portfolio</p></div>
+    <div class="container"><p>&copy; <span id="current-year">2026</span> La Tinro Inra Jaya Kunta, S.T. · Mining Engineer Portofolio</p></div>
   </footer>
 
   <dialog class="lightbox" id="lightbox" aria-label="Pratinjau gambar">
@@ -754,7 +753,7 @@
 
       themeToggle.addEventListener('click', () => {
         root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-        try { localStorage.setItem('portfolio-theme', root.dataset.theme); } catch (error) { /* Theme still works for this session. */ }
+        try { localStorage.setItem('portofolio-theme', root.dataset.theme); } catch (error) { /* Theme still works for this session. */ }
         updateThemeControl();
       });
 
